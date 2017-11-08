@@ -1,6 +1,7 @@
 {
   "name": "bitcore-build-crown",
   "version": "0.1.0",
+  "private": true,
   "description": "A helper for common tasks to build bitcore modules'",
   "author": "Crown Developers <info@crown.tech>",
   "main": "index.js",
