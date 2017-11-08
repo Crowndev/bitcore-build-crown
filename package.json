@@ -1,19 +1,24 @@
 {
-  "name": "bitcore-build",
-  "version": "0.9.0",
+  "name": "bitcore-build-crown",
+  "version": "0.1.0",
   "description": "A helper for common tasks to build bitcore modules'",
+  "author": "Crown Developers <info@crown.tech>",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bitpay/bitcore-build"
+    "url": "git://github.com/Crowndev/bitcore-build-crown"
   },
   "keywords": [
     "bitcore"
   ],
   "contributors": [
+    {
+      "name": "BitPay",
+      "email": "dev@bitpay.com"
+    },
     {
       "name": "Esteban Ordano",
       "email": "esteban@bitpay.com"
@@ -37,9 +42,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-build/issues"
+    "url": "https://github.com/Crowndev/bitcore-build-crown/issues"
   },
-  "homepage": "https://github.com/bitpay/bitcore-build",
+  "homepage": "https://github.com/Crowndev/bitcore-build-crown",
   "dependencies": {
     "brfs": "^1.4.3",
     "browserify": "^13.1.1",
