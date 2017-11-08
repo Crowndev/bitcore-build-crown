@@ -45,7 +45,7 @@ var git = require('gulp-git');
 var fs = require('fs');
 
 function ignoreerror() {
-  /* jshint ignore:start */ // using `this` in this context is weird 
+  /* jshint ignore:start */ // using `this` in this context is weird
   this.emit('end');
   /* jshint ignore:end */
 }
@@ -59,7 +59,7 @@ function startGulp(name, opts) {
   var tests = ['test/**/*.js'];
   var alljs = files.concat(tests);
 
-  var buildPath = './node_modules/bitcore-build/';
+  var buildPath = './node_modules/bitcore-build-crown/';
   var buildModulesPath = buildPath + 'node_modules/';
   var buildBinPath = buildPath + 'node_modules/.bin/';
 
@@ -72,7 +72,7 @@ function startGulp(name, opts) {
   // newer version of node? binaries are in lower level of node_module path
   if (!fs.existsSync(browserifyPath)) {
     browserifyPath = './node_modules/.bin/browserify';
-  } 
+  }
 
   if (!fs.existsSync(karmaPath)) {
     karmaPath = './node_modules/.bin/karma';
@@ -129,9 +129,9 @@ function startGulp(name, opts) {
     var browserifyCommand;
 
     if (name !== 'lib') {
-      browserifyCommand = browserifyPath + ' --require ./index.js:' + fullname + ' --external bitcore-lib -o ' + fullname + '.js';
+      browserifyCommand = browserifyPath + ' --require ./index.js:' + fullname + ' --external bitcore-lib-crown -o ' + fullname + '.js';
     } else {
-      browserifyCommand = browserifyPath + ' --require ./index.js:bitcore-lib -o bitcore-lib.js';
+      browserifyCommand = browserifyPath + ' --require ./index.js:bitcore-lib-crown -o bitcore-lib-crown.js';
     }
 
     gulp.task('browser:uncompressed', shell.task([
@@ -352,7 +352,7 @@ function startGulp(name, opts) {
       bumper,
       // build browser files
       browser ? 'browser' : 'noop',
-      // Commit 
+      // Commit
       'release:build-commit',
       // Run git push bitpay $VERSION
       'release:push-tag',
