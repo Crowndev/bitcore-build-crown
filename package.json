@@ -1,13 +1,12 @@
 {
   "name": "bitcore-build-crown",
   "version": "0.1.0",
-  "private": true,
+  "publishConfig": {
+    "tag": "next"
+  },
   "description": "A helper for common tasks to build bitcore modules'",
   "author": "Crown Developers <info@crown.tech>",
   "main": "index.js",
-  "scripts": {
-    "test": "gulp test"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/Crowndev/bitcore-build-crown"
