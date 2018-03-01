@@ -1,6 +1,6 @@
 {
   "name": "bitcore-build-crown",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publishConfig": {
     "tag": "next"
   },
@@ -62,11 +62,12 @@
     "istanbul": "^0.4.5",
     "karma": "^1.7.1",
     "karma-detect-browsers": "^2.2.4",
+    "karma-chrome-launcher": "^2.2.0",
     "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.4",
     "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "plato": "^1.7.0",
+    "puppeteer": "^1.1.1",
     "run-sequence": "^1.2.2",
     "zuul": "^3.11.1"
   }
